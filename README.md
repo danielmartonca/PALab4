@@ -6,7 +6,7 @@ This repository is for the tasks given at laboratory 4. I managed to finish ....
 
 ## Essential tools
 
-You need to have Java RE or JDK >= 8 installed on your computer.
+You need to have Java RE or JDK >= 10 installed on your computer.
 
 ## How to run it?
 
@@ -63,7 +63,13 @@ School{name='H0', capacity=1}=[Student{name='S3'}, Student{name='S0'}, Student{n
 
 ## Optional
 
-Not yet worked on.
+- [X] Create a class that describes the problem and one that describes a solution (a matching) to this problem.
+- [ ] Using Java Stream API, write queries that display the students who find acceptable a given list of schools, and
+  the schools that have a given student as their top preference.
+- [X] Use a third-party library in order to generate random fake names for students and schools.
+- [ ] Implement an algorithm for creating a matching, considering that each student has a score obtained at the
+  evaluation exam, and the schools rank students based on this score.
+- [ ] Test your algorithm.
 
 ## Bonus
 
