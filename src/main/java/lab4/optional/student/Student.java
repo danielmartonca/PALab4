@@ -1,8 +1,11 @@
 package lab4.optional.student;
 
 
+import lab4.optional.school.School;
 import lombok.Data;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 /**
@@ -13,17 +16,16 @@ public @Data
 class Student implements Comparable<Student> {
 
     private String name;
-    private double score;
+    private Map<School, Double> gradesAtExam;
 
     /**
      * Constructor for Student object
      *
-     * @param name  the name of the student
-     * @param score the score of the student
+     * @param name the name of the student
      */
-    public Student(String name, double score) {
+    public Student(String name) {
         this.name = name;
-        this.score = score;
+        this.gradesAtExam = new HashMap<>();
     }
 
     /**
@@ -59,6 +61,26 @@ class Student implements Comparable<Student> {
     @Override
     public int hashCode() {
         return Objects.hash(name);
+    }
+
+    /**
+     * This method adds the grade at the exam for a specific school.
+     *
+     * @param school the school of which we set the grade
+     * @param grade  the grade at the exam
+     */
+    public void setGradeForSchool(School school, double grade) {
+        gradesAtExam.put(school, grade);
+    }
+
+    /**
+     * This method returns the grade of the student at the exam at the specified school as parameter
+     *
+     * @param school the school at which he took the grade
+     * @return the grade
+     */
+    public double getGradeForSchool(School school) {
+        return gradesAtExam.get(school);
     }
 }
 

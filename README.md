@@ -64,12 +64,32 @@ School{name='H0', capacity=1}=[Student{name='S3'}, Student{name='S0'}, Student{n
 ## Optional
 
 - [X] Create a class that describes the problem and one that describes a solution (a matching) to this problem.
-- [ ] Using Java Stream API, write queries that display the students who find acceptable a given list of schools, and
+- [X] Using Java Stream API, write queries that display the students who find acceptable a given list of schools, and
   the schools that have a given student as their top preference.
 - [X] Use a third-party library in order to generate random fake names for students and schools.
-- [ ] Implement an algorithm for creating a matching, considering that each student has a score obtained at the
+- [X] Implement an algorithm for creating a matching, considering that each student has a score obtained at the
   evaluation exam, and the schools rank students based on this score.
-- [ ] Test your algorithm.
+- [X] Test your algorithm.
+
+The output is different because of Math.rand() function used. <br />
+Here is the output I received when i ran the code:<br />
+
+```dif
+The list of preferences is: [School(name=The Romaguera College, capacity=1), School(name=South New Jersey University, capacity=1), School(name=Southern Mayert College, capacity=2)]
+
+The student "Lavada Ernser" accepts the list of preferences.
+The student "Reed Hahn" accepts the list of preferences.
+
+
+The list of schools who have student "Lavada Ernser" as their top target is:
+The school "The Romaguera College".
+The school "South New Jersey University".
+
+Found the fallowing matching for the problem:
+[ (Lavada Ernser:The Romaguera College), (Lorean Hermann:Southern Mayert College), (Mrs. Serafina Stehr:South New Jersey University), (Reed Hahn:Southern Mayert College), ].
+
+Process finished with exit code 0
+```
 
 ## Bonus
 
