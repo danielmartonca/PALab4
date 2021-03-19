@@ -93,4 +93,18 @@ Process finished with exit code 0
 
 ## Bonus
 
-Not yet worked on.
+- [X] Consider the case in which a school can rank the students based on their specific criteria.
+- [X] Implement the Gale Shapley algorithm in order to find a stable matching.
+- [X] Consider the case in which preferences are not necessarily strict. Some consecutive preferences in an element's list may form a tie.
+- [X] For example S1: H1, \[H2,H3] means that S1 prefers H1 over H2 and H3, but H2 and H3 have no precedence one over the other.
+- [ ] Prove that in the case of SAP with ties, a problem may have multiple stable matchings, not all of the same size.
+- [ ] Check out other examples of matching in practice.
+
+Here is the output I received when i ran the code:<br />
+```dif
+
+Found the fallowing matching for the problem:
+[ (S0:H0), (S1:H1), (S2:H1), (S3:H2), ].
+Process finished with exit code 0
+```
+
