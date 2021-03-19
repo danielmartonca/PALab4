@@ -28,18 +28,18 @@ public class MainBonus {
 
         //specify the preferences for each student
         //student 0
-        problem.addPreferenceForStudent(students[0], schools[0]);                                               //  S0: (H0,
-        problem.addPreferenceForStudent(students[0], schools[1]);                                               //  S0:  H1,
-        problem.addPreferenceForStudent(students[0], schools[2]);                                               //  S0:  H2 )
+        problem.addPreferenceForStudent(students[0], schools[0]);                                                 //  S0: (H0,
+        problem.addPreferenceForStudent(students[0], schools[1]);                                                 //  S0:  H1,
+        problem.addPreferenceForStudent(students[0], schools[2]);                                                 //  S0:  H2 )
         //student 1
-        problem.addPreferenceForStudent(students[1], schools[0]);                                               //  S1: (H0,
-        problem.addPreferenceForStudent(students[1], schools[1], schools[2]);                                   //  S1:  H1=H2 )
+        problem.addPreferenceForStudent(students[1], schools[0]);                                                 //  S1: (H0,
+        problem.addPreferenceForStudent(students[1], schools[1], schools[2]);                                     //  S1:  H1=H2 )
         //student 2
-        problem.addPreferenceForStudent(students[2], schools[0], schools[1]);                                   //  S2: (H0=H1,
-        problem.addPreferenceForStudent(students[2], schools[2]);                                               //  S2:  H2 )
+        problem.addPreferenceForStudent(students[2], schools[0], schools[1]);                                     //  S2: (H0=H1,
+        problem.addPreferenceForStudent(students[2], schools[2]);                                                 //  S2:  H2 )
 
         //student 3
-        problem.addPreferenceForStudent(students[3], schools[2], schools[1]);                                   //  S3:  (H2=H1 )
+        problem.addPreferenceForStudent(students[3], schools[2], schools[1]);                                     //  S3:  (H2=H1 )
 
 
         //specify the preferences for each school
